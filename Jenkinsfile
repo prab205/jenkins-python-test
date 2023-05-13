@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-		echo "currently not any building steps required"
+                pip install -r requirements.txt
                 '''
             }
         }
@@ -28,7 +28,7 @@ pipeline {
             steps {
                 echo 'Deliver....'
                 sh '''
-                echo "Since testing has been successfully completed, we can commit it to main branch"
+                echo "Delivery step to be worked upon"
                 '''
             }
         }
