@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-		        currently not any building steps required
+		echo "currently not any building steps required"
                 '''
             }
         }
