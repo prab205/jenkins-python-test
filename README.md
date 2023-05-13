@@ -1,21 +1,5 @@
-# Object To Image (OTI)
 
-Converts paragraphs of text to its corresponding image and vice versa.
+# Jenkins Test File
 
-Web application developed in Flask 2.2.3 <br />
-Hosted at [render](https://oti.onrender.com) <br />
-Might take ~30sec initially to get the service up and running.
+This is going to be the main branch.
 
-----
-**To run the application locally**
-1. Clone the github repo    
-`git clone https://github.com/prab205/Web-Object-Image.git`
-
-2. Enter the project directory    
-`cd Web-Object-Image`
-
-3. Install the dependencies    
-`pip install -r requirements.txt`
-
-4. Run the program    
-`flask --app app run`
