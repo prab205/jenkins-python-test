@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         node {
-            label 'docker-image-webTest'
+            label 'docker-agent-python'
             }
       }
     triggers {
@@ -20,7 +20,8 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                python3 run.py
+                python3 app.py &
+		curl localhost:8000
                 '''
             }
         }
