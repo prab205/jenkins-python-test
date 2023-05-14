@@ -21,6 +21,3 @@ def image2Object():
       return render_template("obj.html", user_output = user_obj )
    
    return render_template("index.html")
-
-if __name__ == '__main__':
-   app.run(host="0.0.0.0", port=int("8000"))

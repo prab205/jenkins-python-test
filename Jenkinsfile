@@ -20,8 +20,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                python3 app.py &
-		curl localhost:8000
+                python3 app.py
                 '''
             }
         }
@@ -40,6 +39,11 @@ post {
              subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
              body: "Something is wrong with ${env.BUILD_URL}"
     }
+
+success {
+	mail to: 'prabinpaudel43@gmail.com', subject:"Build completed: ${currentBuild.fullDisplayName}",
+             body: "Congratulations"
+    } 
 }
 
 }
