@@ -42,7 +42,7 @@ post {
 
 success {
 	mail to: 'prabinpaudel43@gmail.com', subject:"Build completed: ${currentBuild.fullDisplayName}",
-             body: "Congratulations"
+             body: "You have a successfully built pull request pending."
     } 
 }
 
