@@ -20,7 +20,8 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                python3 app.py
+                python3 app.py &
+		curl localhost:8000
                 '''
             }
         }
